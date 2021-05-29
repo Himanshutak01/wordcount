@@ -1,0 +1,17 @@
+<h1>There are {{ count }} words in your text</h1>
+<br />
+<br />
+<a href="{% url 'home' %}"><h4>GO HOME</h4></a>
+<br />
+<h2>Text you entered is :</h2>
+<br />
+<br />
+{{ enteredtext }}
+<br />
+<br />
+<h2>Words as per their number of occurence are:</h2>
+{% for word, counttotal in sortedword %}
+<br />
+{{word}}  ---- {{counttotal}}
+<br />
+{% endfor %}

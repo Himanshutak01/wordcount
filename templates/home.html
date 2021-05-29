@@ -1,0 +1,13 @@
+<h1>We just moved our homepage to html!</h1>
+
+<h2>Word Count Project Begins</h2>
+
+<form action="{% url 'count' %}">
+  <textarea name="fulltext" rows="20" cols="80"></textarea>
+  <br />
+  <input type="submit" name="button" value="COUNT" />
+</form>
+
+<a href="{% url 'about' %}"><h4>About</h4></a>
+
+{{ introduction }}
